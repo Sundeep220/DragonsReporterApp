@@ -21,7 +21,18 @@ to store and retrieve the dragons info.
    the process of saving details about the dragons. To make the functions to works in a sequential manner, I'm going to make use of anonther AWS service called as 
    Amazon Step Functions which will help me to create a workflow for my Lambda functions. To create the workflow design I'm going to use the Amazon States Language(ASL)
    provided by AWS. The workflow design is as follows:
+   
    ![statemachines](https://user-images.githubusercontent.com/93663329/186620047-d8cca037-921a-4bbf-b267-c9ae43216418.png)
+   
+
+   For not getting any unknown errors the machine for POSTING new dragons will work like as follows: 
+   
+   ![post-newdragon](https://user-images.githubusercontent.com/93663329/186620918-b9be957a-2a86-408a-802c-5e731b0e5d48.png)
+   
+   Same for ENTERING a duplicate entry, the workflow is as follows: 
+ 
+     ![post-exisiting-dragon](https://user-images.githubusercontent.com/93663329/186621210-5f6aa498-1208-476b-af75-52e717e1499e.png)
+   
    
 6. Lastly to see the progress of these services and functions created I'm going to use Amazon Cloudwatch logs and Amazon X-ray services to monitor the lambda functions, 
    APIs created, and the state machine created. This will help me to troubleshoot any error or erronious behaviour of the application.

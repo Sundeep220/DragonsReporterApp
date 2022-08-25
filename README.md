@@ -11,7 +11,8 @@ to store and retrieve the dragons info.
 
 **For now building this app , I'm going to:
 1. Create an s3 bucket to host the application and store the dragons data in a file.
-2. Create an api gateway using REST api to create an endpoints for users to make request to list the dragons details and to report the new dragons if spotted.
+2. Create an api gateway using REST api to create an endpoints for users to make request to list the dragons details and to report the new dragons if spotted. I'm going
+   to create the api named as `dragons`. This endpoint will have 2 methods: GET and POST for retrieving and saving dragons to database.
 3. Create an authentication service to authenticate users to allow them through my api gateway to access the app. For this I'm going to use Amazon Cognnito.
 4. Create the backend services which will then retrieve the dragons details from s3 bucket and also save the details about the new dragons posted by the authenticated 
    users. For this I'm going to use Lambda functions.

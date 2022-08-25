@@ -20,9 +20,12 @@ to store and retrieve the dragons info.
    create a another lambda function to validate the dragon details and if they are validated , then add them to dragons database. So now we have 2 lambda functions in 
    the process of saving details about the dragons. To make the functions to works in a sequential manner, I'm going to make use of anonther AWS service called as 
    Amazon Step Functions which will help me to create a workflow for my Lambda functions. To create the workflow design I'm going to use the Amazon States Language(ASL)
-   provided by AWS.
+   provided by AWS. The workflow design is as follows:
+   ![statemachines](https://user-images.githubusercontent.com/93663329/186620047-d8cca037-921a-4bbf-b267-c9ae43216418.png)
+   
 6. Lastly to see the progress of these services and functions created I'm going to use Amazon Cloudwatch logs and Amazon X-ray services to monitor the lambda functions, 
    APIs created, and the state machine created. This will help me to troubleshoot any error or erronious behaviour of the application.
    
    
 - I'm going to use Amazon Cloud9 IDE to manage and create these services using aws cli and aws sdk for python `boto3`.
+

@@ -9,7 +9,7 @@ also report about the new dragons if spotted.
 - I'm now building this application on AWS cloud. Currently this app doesn't works as there is storage service connected to it and no backend services 
 to store and retrieve the dragons info. 
 
-**For now building this app , I'm going to:
+**For now building this app , I'm going to**:
 1. Create an s3 bucket to host the application and store the dragons data in a file.
 2. Create an api gateway using REST api to create an endpoints for users to make request to list the dragons details and to report the new dragons if spotted. I'm going
    to create the api named as `dragons`. This endpoint will have 2 methods: GET and POST for retrieving and saving dragons to database.
